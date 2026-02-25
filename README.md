@@ -1,30 +1,56 @@
-# AutoEncoders + GAN
+# **Autoencoders for Product Image Generation**
 
-<a target="_blank" href="https://cookiecutter-data-science.drivendata.org/">
-    <img src="https://img.shields.io/badge/CCDS-Project%20template-328F97?logo=cookiecutter" />
-</a>
+## **• Project Overview**
 
-A short description of the project.
+This project explores the use of **autoencoders** as *generative deep learning models* applied to fashion product images for e-commerce applications. We implement and compare **vanilla autoencoders**, **denoising autoencoders**, and **variational autoencoders (VAEs)** to study their reconstruction capabilities, latent representations, and generative potential.
 
-## Project Organization
+---
+
+## **• Objectives**
+
+### General Objective
+To understand the basic characteristics of autoencoders and their application in generative deep learning.
+
+### Specific Objectives
+- Implement a **vanilla autoencoder** for image reconstruction.
+- Implement a **denoising autoencoder** for noise removal in product images.
+- Implement a **convolutional variational autoencoder (VAE)** for image generation.
+- Explore potential applications of autoencoders in e-commerce scenarios.
+
+---
+
+## **• Motivation**
+Studies indicate that more than **63% of consumers** consider product images more important than textual descriptions when making purchasing decisions. Therefore, image quality plays a critical role in user engagement and conversion rates on e-commerce platforms, making this dataset suitable for autoencoder-based analysis.
+
+---
+
+## **• Dataset Description**
+The dataset consists of **over 2,900 product images** belonging to the **Apparel** and **Footwear** categories, subdivided by gender:
+
+- Apparel: Boys, Girls  
+- Footwear: Men, Women  
+
+Each image is associated with a unique **ProductId**, and additional metadata is provided in the `fashion.csv` file, including:
+- Product title  
+- Description  
+- Category  
+- Gender  
+
+---
+
+## **• Project Organization**
 
 ```
-├── LICENSE            <- Open-source license if one is chosen
 ├── Makefile           <- Makefile with convenience commands like `make data` or `make train`
 ├── README.md          <- The top-level README for developers using this project.
 ├── data
 │   ├── external       <- Data from third party sources.
 │   ├── interim        <- Intermediate data that has been transformed.
 │   ├── processed      <- The final, canonical data sets for modeling.
-│   └── raw            <- The original, immutable data dump.
-│
-├── docs               <- A default mkdocs project; see www.mkdocs.org for details
 │
 ├── models             <- Trained and serialized models, model predictions, or model summaries
 │
-├── notebooks          <- Jupyter notebooks. Naming convention is a number (for ordering),
-│                         the creator's initials, and a short `-` delimited description, e.g.
-│                         `1.0-jqp-initial-data-exploration`.
+├── notebooks          <- Jupyter notebooks
 │
 ├── pyproject.toml     <- Project configuration file with package metadata for 
 │                         autoencoders_gan and configuration for tools like black
@@ -36,8 +62,6 @@ A short description of the project.
 │
 ├── requirements.txt   <- The requirements file for reproducing the analysis environment, e.g.
 │                         generated with `pip freeze > requirements.txt`
-│
-├── setup.cfg          <- Configuration file for flake8
 │
 └── autoencoders_gan   <- Source code for use in this project.
     │
@@ -58,4 +82,3 @@ A short description of the project.
 ```
 
 --------
-
