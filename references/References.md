@@ -41,6 +41,9 @@ These sources focus on robustness, noise injection, and reconstruction of clean 
 
 These references were used to understand probabilistic latent variable models, KL divergence, the reparameterization trick, and image generation with VAEs.
 
+### Academic Papers (PDF)
+- **Machine learning for data science handbook: data mining and knowledge discovery handbook, 353-374.** - *(Bank, D., Koenigstein, N., & Giryes, R., 2023).*: https://arxiv.org/pdf/2003.05991 
+
 ### Documentation / Tutorials
 - **Keras Official Examples** – *Variational Autoencoder*: https://keras.io/examples/generative/vae/
 - **Drops of AI** – *Variational Autoencoders and Image Generation with Keras*: https://dropsofai.com/variational-autoencoders-and-image-generation-with-keras/
